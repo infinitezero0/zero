@@ -17,7 +17,7 @@ namespace FastIO
     }
     void read() {}
     template <typename T>
-        typename std::enable_if<is_same_v<T,double>>::type
+        typename enable_if<is_same_v<T,double>>::type
         read_single(T& x){
             static const double pow10_neg[]={0,0.1,0.01,0.001,0.0001,
                 0.00001,0.000001,0.0000001,0.00000001,0.000000001,0.0000000001};
